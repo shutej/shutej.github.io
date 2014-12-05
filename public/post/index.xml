@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Jeremy Shute</title>
-    <link>https://shutej.github.io/post/</link>
+    <link>http://shutej.github.io/post/</link>
     <description>Recent content in Posts on Jeremy Shute</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
     
     <lastBuildDate>Fri, 05 Dec 2014 00:00:00 UTC</lastBuildDate>
-    <atom:link href="https://shutej.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://shutej.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Who am I?</title>
-      <link>https://shutej.github.io/post/who-am-i/</link>
+      <link>http://shutej.github.io/post/who-am-i/</link>
       <pubDate>Fri, 05 Dec 2014 00:00:00 UTC</pubDate>
       
-      <guid>https://shutej.github.io/post/who-am-i/</guid>
+      <guid>http://shutej.github.io/post/who-am-i/</guid>
       <description>&lt;img src=&#34;/images/me.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
 
 &lt;p&gt;In my &lt;a href=&#34;http://lnkd.in/dpcE8SZ&#34;&gt;professional life&lt;/a&gt;, I&amp;rsquo;m a Director of
