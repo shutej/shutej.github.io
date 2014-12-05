@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jeremy Shute</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Jeremy Shute</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    
+    <lastBuildDate>Fri, 05 Dec 2014 00:00:00 UTC</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Who am I?</title>
+      <link>http://localhost:1313/post/first-post/</link>
+      <pubDate>Fri, 05 Dec 2014 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/post/first-post/</guid>
+      <description>&lt;img src=&#34;/img/me.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+&lt;p&gt;In my &lt;a href=&#34;http://lnkd.in/dpcE8SZ&#34;&gt;professional life&lt;/a&gt;, I&amp;rsquo;m a Director of
+Infrastructure for &lt;a href=&#34;https://www.altschool.com&#34;&gt;AltSchool&lt;/a&gt;.  In non-manager
+speak that means I lead complex projects that are important and impactful to
+our whole engineering team.&lt;/p&gt;
+
+&lt;p&gt;I also pinch hit as an individual contributor, though perhaps the most
+important thing I can do for our success is recognize and support other great
+individual contributors.&lt;/p&gt;
+
+&lt;p&gt;Did I mention that &lt;a href=&#34;https://www.altschool.com/jobs&#34;&gt;AltSchool is hiring&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;I used to work at &lt;a href=&#34;https://www.google.com&#34;&gt;Google&lt;/a&gt;, another great company.
+When I got there in 2005, it was a few thousand people, and when I left it had
+grown over 10x.  I loved it there, but I left to try to innovate a $T+
+addressable market that doesn&amp;rsquo;t look much different
+&lt;a href=&#34;https://www.google.com/search?tbm=isch&amp;amp;q=classroom+1910&#34;&gt;now&lt;/a&gt; from &lt;a href=&#34;https://www.google.com/search?tbm=isch&amp;amp;q=classroom+1910&#34;&gt;100 years
+ago&lt;/a&gt; with a really
+excellent team.&lt;/p&gt;
+
+&lt;p&gt;I live in &lt;a href=&#34;https://www.google.com/maps/place/Fort+Greene,+Brooklyn,+NY/&#34;&gt;Fort
+Greene&lt;/a&gt; with my
+wife Sarah and our dog Oscar.  I like taking pictures and have lately tried my
+hand at homebrewing.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
