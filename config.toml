@@ -1,0 +1,9 @@
+baseurl = "http://localhost:1313"
+languageCode = "en-us"
+title = "Jeremy Shute"
+[params]
+    Description = "My thoughts, exactly."
+    github = "shutej"
+    linkedin = "shutej"
+    twitter = "shutej"
+    facebook = "shutej"
