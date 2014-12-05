@@ -20,7 +20,7 @@ I used to work at [Google](https://www.google.com), another great company.
 When I got there in 2005, it was a few thousand people, and when I left it had
 grown over 10x.  I loved it there, but I left to try to innovate a $T+
 addressable market that doesn't look much different
-[now](https://www.google.com/search?tbm=isch&q=classroom+1910) from [100 years
+[now](https://www.google.com/search?tbm=isch&q=classroom+2010) from [100 years
 ago](https://www.google.com/search?tbm=isch&q=classroom+1910) with a really
 excellent team.
 
