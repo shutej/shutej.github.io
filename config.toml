@@ -1,4 +1,4 @@
-baseurl = "http://www.jeremyshute.com"
+baseurl = "https://shutej.github.io"
 languageCode = "en-us"
 title = "Jeremy Shute"
 [params]

@@ -3,7 +3,7 @@ date = "2014-12-05"
 author = "Jeremy Shute"
 title = "Who am I?"
 +++
-{{% imgresponsive "/img/me.jpg" %}}
+{{% imgresponsive "/images/me.jpg" %}}
 
 In my [professional life](http://lnkd.in/dpcE8SZ), I'm a Director of
 Infrastructure for [AltSchool](https://www.altschool.com).  In non-manager
