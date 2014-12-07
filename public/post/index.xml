@@ -2,21 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Jeremy Shute</title>
-    <link>http://shutej.github.io/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on Jeremy Shute</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
     
-    <lastBuildDate>Fri, 05 Dec 2014 00:00:00 UTC</lastBuildDate>
-    <atom:link href="http://shutej.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Dec 2014 00:00:00 UTC</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cross-compiling Go on drone.io</title>
+      <link>http://localhost:1313/post/cross-compiling-go-on-drone-io/</link>
+      <pubDate>Sun, 07 Dec 2014 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/post/cross-compiling-go-on-drone-io/</guid>
+      <description>&lt;p&gt;The folks over at &lt;a href=&#34;https://drone.io&#34;&gt;drone.io&lt;/a&gt; offer free builds for open
+source projects.  However, currently they only support Go 1.2.  This method
+allows you to to cross-compile artifacts with a more recent version of Go.&lt;/p&gt;
+
+&lt;p&gt;Copy &lt;strong&gt;commands.sh&lt;/strong&gt; and &lt;strong&gt;environment-variables.sh&lt;/strong&gt; into the &lt;strong&gt;Settings / Build &amp;amp;
+Test&lt;/strong&gt; tab and copy &lt;strong&gt;artifacts.sh&lt;/strong&gt; into the &lt;strong&gt;Settings / Artifacts&lt;/strong&gt; tab.  Then,
+adjust the &lt;strong&gt;GOX_OSARCH&lt;/strong&gt; environment variable to your liking.&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/shutej/ff2610b1b692c7726f7c.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Incidentally, I specified that my project is &lt;strong&gt;C / C++&lt;/strong&gt; for the simple reason
+that gox recompiles the build toolchain.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Who am I?</title>
-      <link>http://shutej.github.io/post/who-am-i/</link>
+      <link>http://localhost:1313/post/who-am-i/</link>
       <pubDate>Fri, 05 Dec 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://shutej.github.io/post/who-am-i/</guid>
+      <guid>http://localhost:1313/post/who-am-i/</guid>
       <description>&lt;img src=&#34;/images/me.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
 
 &lt;p&gt;In my &lt;a href=&#34;http://lnkd.in/dpcE8SZ&#34;&gt;professional life&lt;/a&gt;, I&amp;rsquo;m a Director of

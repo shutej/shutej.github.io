@@ -26,7 +26,7 @@
     <div class="sidebar pure-u-1 pure-u-md-1-4">
     <div class="header">
         <hgroup>
-            <h1 class="brand-title"><a href="http://shutej.github.io">Jeremy Shute</a></h1>
+            <h1 class="brand-title"><a href="http://localhost:1313">Jeremy Shute</a></h1>
             <h2 class="brand-tagline"> My thoughts, exactly. </h2>
         </hgroup>
 
@@ -63,11 +63,43 @@
             
             <div class="posts">
                 
+                <h1 class="content-subhead">07 Dec 2014, 00:00</h1>
+                <section class="post">
+                    <header class="post-header">
+
+                        <a href="http://localhost:1313/post/cross-compiling-go-on-drone-io/" class="post-title">Cross-compiling Go on drone.io</a>
+
+                        <p class="post-meta">
+                            
+                                By <strong class="post-author">Jeremy Shute</strong>
+                            
+                            
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>The folks over at <a href="https://drone.io">drone.io</a> offer free builds for open
+source projects.  However, currently they only support Go 1.2.  This method
+allows you to to cross-compile artifacts with a more recent version of Go.</p>
+
+<p>Copy <strong>commands.sh</strong> and <strong>environment-variables.sh</strong> into the <strong>Settings / Build &amp;
+Test</strong> tab and copy <strong>artifacts.sh</strong> into the <strong>Settings / Artifacts</strong> tab.  Then,
+adjust the <strong>GOX_OSARCH</strong> environment variable to your liking.</p>
+
+<script src="https://gist.github.com/shutej/ff2610b1b692c7726f7c.js"></script>
+
+
+<p>Incidentally, I specified that my project is <strong>C / C++</strong> for the simple reason
+that gox recompiles the build toolchain.</p>
+
+                    </div>
+                </section>
+                
                 <h1 class="content-subhead">05 Dec 2014, 00:00</h1>
                 <section class="post">
                     <header class="post-header">
 
-                        <a href="http://shutej.github.io/post/who-am-i/" class="post-title">Who am I?</a>
+                        <a href="http://localhost:1313/post/who-am-i/" class="post-title">Who am I?</a>
 
                         <p class="post-meta">
                             

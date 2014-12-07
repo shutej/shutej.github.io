@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
 
-    <title>Who am I? &middot; Jeremy Shute</title>
+    <title>Cross-compiling Go on drone.io &middot; Jeremy Shute</title>
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oxygen:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.5.0/pure-min.css">
     
@@ -62,11 +62,11 @@
         <div>
             
             <div class="posts">
-                <h1 class="content-subhead">05 Dec 2014, 00:00</h1>
+                <h1 class="content-subhead">07 Dec 2014, 00:00</h1>
                 <section class="post">
                     <header class="post-header">
 
-                        <a href="http://localhost:1313/post/who-am-i/" class="post-title">Who am I?</a>
+                        <a href="http://localhost:1313/post/cross-compiling-go-on-drone-io/" class="post-title">Cross-compiling Go on drone.io</a>
 
                         <p class="post-meta">
                             
@@ -77,31 +77,19 @@
                     </header>
 
                     <div class="post-description">
-                        <img src="/images/me.jpg" alt="" class="pure-img" >
+                        <p>The folks over at <a href="https://drone.io">drone.io</a> offer free builds for open
+source projects.  However, currently they only support Go 1.2.  This method
+allows you to to cross-compile artifacts with a more recent version of Go.</p>
 
-<p>In my <a href="http://lnkd.in/dpcE8SZ">professional life</a>, I&rsquo;m a Director of
-Infrastructure for <a href="https://www.altschool.com">AltSchool</a>.  In non-manager
-speak that means I lead complex projects that are important and impactful to
-our whole engineering team.</p>
+<p>Copy <strong>commands.sh</strong> and <strong>environment-variables.sh</strong> into the <strong>Settings / Build &amp;
+Test</strong> tab and copy <strong>artifacts.sh</strong> into the <strong>Settings / Artifacts</strong> tab.  Then,
+adjust the <strong>GOX_OSARCH</strong> environment variable to your liking.</p>
 
-<p>I also pinch hit as an individual contributor, though perhaps the most
-important thing I can do for our success is recognize and support other great
-individual contributors.</p>
+<script src="https://gist.github.com/shutej/ff2610b1b692c7726f7c.js"></script>
 
-<p>Did I mention that <a href="https://www.altschool.com/jobs">AltSchool is hiring</a>?</p>
 
-<p>I used to work at <a href="https://www.google.com">Google</a>, another great company.
-When I got there in 2005, it was a few thousand people, and when I left it had
-grown over 10x.  I loved it there, but I left to try to innovate a $T+
-addressable market that doesn&rsquo;t look much different
-<a href="https://www.google.com/search?tbm=isch&amp;q=classroom+2010">now</a> from <a href="https://www.google.com/search?tbm=isch&amp;q=classroom+1910">100 years
-ago</a> with a really
-excellent team.</p>
-
-<p>I live in <a href="https://www.google.com/maps/place/Fort+Greene,+Brooklyn,+NY/">Fort
-Greene</a> with my
-wife Sarah and our dog Oscar.  I like taking pictures and have lately tried my
-hand at homebrewing.</p>
+<p>Incidentally, I specified that my project is <strong>C / C++</strong> for the simple reason
+that gox recompiles the build toolchain.</p>
 
                     </div>
                 </section>
