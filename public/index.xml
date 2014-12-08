@@ -8,8 +8,76 @@
     <language>en-us</language>
     
     
-    <lastBuildDate>Sun, 07 Dec 2014 00:00:00 UTC</lastBuildDate>
+    <lastBuildDate>Mon, 08 Dec 2014 00:00:00 UTC</lastBuildDate>
     <atom:link href="http://www.jeremyshute.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>On Hiring</title>
+      <link>http://www.jeremyshute.com/post/on-hiring/</link>
+      <pubDate>Mon, 08 Dec 2014 00:00:00 UTC</pubDate>
+      
+      <guid>http://www.jeremyshute.com/post/on-hiring/</guid>
+      <description>&lt;p&gt;I learned how to hire while I worked for Google, a company that has an enviable
+number of great engineers.  They frequently rank in the &lt;a href=&#34;http://www.greatplacetowork.com/best-companies/100-best-companies-to-work-for&#34;&gt;top places to
+work&lt;/a&gt;,
+but when I left the thing I missed the most was not the free food or the
+generous vacation.  I missed the people.&lt;/p&gt;
+
+&lt;p&gt;How did Google get so many great engineers?  I&amp;rsquo;ve heard it said that great
+problems attract great people.  I&amp;rsquo;ve also heard it said that great people
+attract great people.  I actually think they just hire great people.&lt;/p&gt;
+
+&lt;p&gt;So, if you want to emulate their success, what should you do?&lt;/p&gt;
+
+&lt;p&gt;Whenever you measure a population, the &lt;a href=&#34;http://en.wikipedia.org/wiki/Normal_distribution&#34;&gt;bell
+curve&lt;/a&gt; is bound to come up.
+The bell curve is used to measure underlying processes that have an outcome
+that&amp;rsquo;s the sum of many small random events.  You can probably safely assume
+that your measure of &amp;ldquo;employee quality&amp;rdquo; will look like a bell curve.  You can
+also probably safely assume your applicant&amp;rsquo;s interview scores will also look
+like a bell curve.&lt;/p&gt;
+
+&lt;p&gt;By changing policies and processes, you can increase the accuracy of the hiring
+decision.  The name of the game here is increasing the correlation between
+&amp;ldquo;employee quality&amp;rdquo; and applicant interview score.  They&amp;rsquo;ll both still look like
+a bell curve when viewed independently, but when plotted against one another
+the relationship becomes obvious.&lt;/p&gt;
+
+&lt;img src=&#34;/images/correlation.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+&lt;p&gt;By changing the number of applicants you reject, you bias the result toward the
+ones that are of &amp;ldquo;employee quality.&amp;rdquo;  Notice that in the &lt;em&gt;p=0&lt;/em&gt; graph above, the
+right side of the graph looks like it has the same mean on the &lt;em&gt;y&lt;/em&gt; axis as the
+left side of the graph.  However, if you divide the &lt;em&gt;p=1&lt;/em&gt; graph, the right side
+will have a much higher mean than the left side.&lt;/p&gt;
+
+&lt;p&gt;How do these factors relate to each other?  I put together a quick random
+simulation to determine exactly that.  Unfortunately at a sample size of 100 it
+was too difficult to read, so the following represents what happens when hiring
+1,000 employees.&lt;/p&gt;
+
+&lt;img src=&#34;/images/quality.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
+
+&lt;p&gt;Two things stand out to me immediately.&lt;/p&gt;
+
+&lt;p&gt;If you want a chance of hiring an organization that performs in the 90th+
+percentile, you need an accuracy of at least 50%.  Your interview questions
+need to be topical to the job function, demonstrable skills need to be
+demonstrated, and you should try to get information from multiple interviewers.&lt;/p&gt;
+
+&lt;p&gt;But, you also need a bias of at least 75%!  In other words, you have to say
+&amp;ldquo;no&amp;rdquo; to at least 3 out of 4 candidates, regardless of how accurate you think
+your process is.  Looking at the slope, it&amp;rsquo;s clear that bias becomes even more
+important than accuracy as you try to exceed the 90th+ percentile of
+performance.&lt;/p&gt;
+
+&lt;p&gt;Applicants should understand that great organizations are built by having high
+precision but low recall.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I don&amp;rsquo;t want to belong to any club that will accept people like me as a
+ member. &amp;ndash; Groucho Marx&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Cross-compiling Go on drone.io</title>
