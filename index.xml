@@ -8,8 +8,57 @@
     <language>en-us</language>
     
     
-    <lastBuildDate>Mon, 08 Dec 2014 00:00:00 UTC</lastBuildDate>
+    <lastBuildDate>Sat, 17 Jan 2015 00:00:00 UTC</lastBuildDate>
     <atom:link href="http://www.jeremyshute.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Putting MongoDB behind SSL using MMS</title>
+      <link>http://www.jeremyshute.com/post/putting-mongodb-behind-ssl-using-mms/</link>
+      <pubDate>Sat, 17 Jan 2015 00:00:00 UTC</pubDate>
+      
+      <guid>http://www.jeremyshute.com/post/putting-mongodb-behind-ssl-using-mms/</guid>
+      <description>&lt;p&gt;We use MongoDB for a variety of things at work.  However, there are not many
+3rd party Mongo providers that offer SSL-protected connections at present.  We
+need SSL for two reasons:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;We have a bunch of services running on Heroku.  As a result, they need to
+access the database over the public internet.&lt;/li&gt;
+&lt;li&gt;Internal users want read-only access to query the data, or read-write access
+for prototyping or running tests.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The folks over at MongoDB offer MongoDB Management Service (MMS).  This is
+actually a pretty excellent product if you&amp;rsquo;re a startup: it has a paid backup
+service, gives you the ability to easily manage replica sets, and is generally
+very cost-competitive.&lt;/p&gt;
+
+&lt;p&gt;However, even if you are an Enterprise customer, at present MMS does not offer
+a way to configure your database such that connections from the public internet
+are SSL-protected.  Ouch.&lt;/p&gt;
+
+&lt;p&gt;Enter &lt;a href=&#34;https://github.com/shutej/dvara&#34;&gt;my fork of Dvara&lt;/a&gt;.  Dvara is a
+relatively new MongoDB proxy from the folks at Facebook.  Because Dvara is
+written in Go, it took me only a few hours to add a few features.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The fork supports connecting over SSL if you pass &lt;code&gt;--key_file&lt;/code&gt; and
+&lt;code&gt;--cert_file&lt;/code&gt; command line flags.&lt;/li&gt;
+&lt;li&gt;The fork supports authenticating Dvara itself so that it is allowed to
+retrieve (only) the necessary replica information.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a &lt;a href=&#34;http://www.fabfile.org/&#34;&gt;Fabric&lt;/a&gt; script that will let you set up
+Dvara on your own AWS instances!  Read the &lt;code&gt;fabfile.py&lt;/code&gt; carefully for usage
+information.&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/shutej/0fe01b131d3a9868b232.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I hope this will make it possible for others to keep their data flowing
+securely!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>On Hiring</title>

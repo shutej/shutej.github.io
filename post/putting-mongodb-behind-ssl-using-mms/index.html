@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+
+    <title>Putting MongoDB behind SSL using MMS &middot; Jeremy Shute</title>
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oxygen:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    
+    
+        <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    
+
+    
+    
+        <link rel="stylesheet" href="/css/blog.css">
+    
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+    <div class="header">
+        <hgroup>
+            <h1 class="brand-title"><a href="http://www.jeremyshute.com">Jeremy Shute</a></h1>
+            <h2 class="brand-tagline"> My thoughts, exactly. </h2>
+        </hgroup>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                
+                <li class="nav-item">
+                    <a class="pure-button" href="http://github.com/shutej "><i class="fa fa-github-square"></i> github</a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="pure-button" href="http://www.linkedin.com/in/shutej "><i class="fa fa-linkedin-square"></i> linkedin</a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="pure-button" href="http://www.facebook.com/shutej "><i class="fa fa-facebook-square"></i> facebook</a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="pure-button" href="http://twitter.com/shutej"><i class="fa fa-twitter-square"></i> twitter</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            
+            <div class="posts">
+                <h1 class="content-subhead">17 Jan 2015, 00:00</h1>
+                <section class="post">
+                    <header class="post-header">
+
+                        <a href="http://www.jeremyshute.com/post/putting-mongodb-behind-ssl-using-mms/" class="post-title">Putting MongoDB behind SSL using MMS</a>
+
+                        <p class="post-meta">
+                            
+                                By <strong class="post-author">Jeremy Shute</strong>
+                            
+                            
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>We use MongoDB for a variety of things at work.  However, there are not many
+3rd party Mongo providers that offer SSL-protected connections at present.  We
+need SSL for two reasons:</p>
+
+<ol>
+<li>We have a bunch of services running on Heroku.  As a result, they need to
+access the database over the public internet.</li>
+<li>Internal users want read-only access to query the data, or read-write access
+for prototyping or running tests.</li>
+</ol>
+
+<p>The folks over at MongoDB offer MongoDB Management Service (MMS).  This is
+actually a pretty excellent product if you&rsquo;re a startup: it has a paid backup
+service, gives you the ability to easily manage replica sets, and is generally
+very cost-competitive.</p>
+
+<p>However, even if you are an Enterprise customer, at present MMS does not offer
+a way to configure your database such that connections from the public internet
+are SSL-protected.  Ouch.</p>
+
+<p>Enter <a href="https://github.com/shutej/dvara">my fork of Dvara</a>.  Dvara is a
+relatively new MongoDB proxy from the folks at Facebook.  Because Dvara is
+written in Go, it took me only a few hours to add a few features.</p>
+
+<ol>
+<li>The fork supports connecting over SSL if you pass <code>--key_file</code> and
+<code>--cert_file</code> command line flags.</li>
+<li>The fork supports authenticating Dvara itself so that it is allowed to
+retrieve (only) the necessary replica information.</li>
+</ol>
+
+<p>Here&rsquo;s a <a href="http://www.fabfile.org/">Fabric</a> script that will let you set up
+Dvara on your own AWS instances!  Read the <code>fabfile.py</code> carefully for usage
+information.</p>
+
+<script src="https://gist.github.com/shutej/0fe01b131d3a9868b232.js"></script>
+
+
+<p>I hope this will make it possible for others to keep their data flowing
+securely!</p>
+
+                    </div>
+                </section>
+            </div>
+            <div class="footer">
+    <div class="pure-menu pure-menu-horizontal pure-menu-open">
+        <ul>
+            <li>Powered by <a class="hugo" href="http://hugo.spf13.com/" target="_blank">hugo</a></li>
+        </ul>
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
